@@ -1,0 +1,26 @@
+1.传递session值（学号，用户名，学号id） OK！
+PublicController里
+2.跳转到新闻系统（找到返回给JS的URL）
+OK  
+3.首页只有论坛（将其他信息删除）OK！
+
+http://localhost/opensns-3.3.0/index.php?s=/forum/index/index.html
+
+4.添加用户（找人来填写信息） OK！
+table
+a)bbs_ucenter_member
+b)bbs_member
+
+5.如果用户未登录，则返回首页（opensns-3.3.0/index.php?s=/index/indexhtml  这个地址要改成JSP（新闻系统）的地址）
+需要更改  1、PublicController.php
+	  2、Ucenter/Controller/MemberController.class.php
+	  3、Ucenter/Controller/SystemController.class.php
+6.修改mysql端口，改为3305
+需要更改：1、mysql.ini  3处
+	  2、Config/Common.php
+	  3、Config/User.php
+
+7.上传.mfc文件并将它转换为.bmp文件
+上传修改
+ThikPHP/Libary/Think/Upload.class.php
+Public/static/ueditor

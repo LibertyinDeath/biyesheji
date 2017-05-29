@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="masterpage_MasterPage" %>
+<%@ Register Src="../webcontrols/treeview.ascx" TagName="treeview" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>无标题页</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; height: 100%">
+            <tr>
+                <td colspan="2">
+                    权限管理</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; text-align: left">
+                    <uc1:treeview ID="Treeview1" runat="server" />
+                </td>
+                <td style="vertical-align: top; text-align: left">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+                </td>
+            </tr>
+        </table>
+        &nbsp;
+    </div>
+    </form>
+</body>
+</html>
+<a href="http://www.51aspx.com/CV/MagRole" target="_blank" title="Asp.net源码下载专业站">download from 51aspx.com</a>
